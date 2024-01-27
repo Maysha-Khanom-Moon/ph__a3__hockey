@@ -1,202 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey</title>
 
     <!-- tailwind + daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font - manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font-family -->
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
-        }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-    
-</head>
-<body class="font-manrope">
+  </head>
+  <body class="font-manrope">
     <!-- header section -->
     <header class="mx-4 md:mx-12 lg:mx-28 lg:my-5 lg:relative">
-        <!-- navbar section -->
-        <nav class="my-1 lg:my-5">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="md:hidden">
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                            </div>
-                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                              <li><a>Home</a></li>
-                              <li><a>About</a></li>
-                              <li><a>Pages</a></li>
-                              <li><a>Blog</a></li>
-                              <li><a>Contact</a></li>
-                            </ul>
-                          </div>
-                      </div>
-                  <div>
-                    <h1 class="text-xl lg:text-4xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</h1>
-                  </div>
+      <!-- navbar section -->
+      <nav class="my-1 lg:my-5">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="md:hidden">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
                 </div>
-                <div class="navbar-center">
-                  <ul class="hidden text-base font-bold gap-x-11 lg:flex">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                  </ul>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-4xl font-extrabold text-[#131318]">
+                Hockey<span class="text-[#FF4240]">’</span>s
+              </h1>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <ul class="hidden text-base font-bold gap-x-11 lg:flex">
+              <li>Home</li>
+              <li>About</li>
+              <li>Pages</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button
+              title="search"
+              class="btn hidden md:flex btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <button
+              title="get ticket"
+              class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold"
+            >
+              Get Ticket
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div class="p-2">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img alt="" src="Images/1.png" class="w-full" />
+            <div class="absolute flex left-[2%] right-5 top-[80%] lg:top-[90%]">
+              <div class="flex gap-1">
+                <div
+                  class="font-bold lg:py-0.5 lg:text-2xl text-white bg-black rounded-[50%]"
+                >
+                  <pre> < </pre>
                 </div>
-                <div class="navbar-end">
-                  <button title='search' class="btn hidden md:flex btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
-                  <button title="get ticket" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">Get Ticket</button>
+                <div
+                  class="font-bold lg:py-0.5 lg:text-2xl text-white bg-black rounded-[50%]"
+                >
+                  <pre> > </pre>
                 </div>
               </div>
-        </nav>
-        <!-- banner section -->
-        <div class="p-2">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img alt="" src="Images/1.png" class="w-full" />
-                  <div class="absolute flex left-[2%] right-5 top-[80%] lg:top-[90%]">
-                    <div class="flex gap-1">
-                        <div class="font-bold lg:py-0.5 lg:text-2xl text-white bg-black rounded-[50%]">
-                            <pre> < </pre>
-                        </div>
-                        <div class="font-bold lg:py-0.5 lg:text-2xl text-white bg-black rounded-[50%]">
-                            <pre> > </pre>
-                        </div>
-                    </div>
-                  </div>
-                  </div>
-            </div> 
+            </div>
+          </div>
+        </div>
 
-            <div class="bg-[#131318] my-2 lg:absolute lg:left-[670px] lg:top-[500px] md:w-[500px] rounded-2xl p-6 lg:p-9">
-                <h3 class="mb-4 text-base lg:text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
-                <p class="text-[#ffffffc1] font-medium text-sm lg:text-base">Behind every hockey hero lies a story of perseverance, sacrifice, and triumph in the face of adversity</p>
+        <div
+          class="bg-[#131318] my-2 lg:absolute lg:left-[670px] lg:top-[500px] md:w-[500px] rounded-2xl p-6 lg:p-9"
+        >
+          <h3 class="mb-4 text-base lg:text-2xl font-extrabold text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-[#ffffffc1] font-medium text-sm lg:text-base">
+            Behind every hockey hero lies a story of perseverance, sacrifice,
+            and triumph in the face of adversity
+          </p>
         </div>
-        </div>
+      </div>
     </header>
 
     <main class="mx-4 md:mx-12 lg:mx-28 lg:my-5">
-        <!-- professional hockeys Club -->
-        <section>
-            <div class="flex flex-col items-center text-center p-9 mb-4 lg:mb-12">
-                <div class="text-4xl my-6 font-extrabold">
-                    <h1>Professional Hockeys Club</h1>
-                </div>
-                <div class="w-full lg:w-[607px] text-[rgba(19, 19, 24, 0.60)] text-base font-medium">
-                    <p>Beyond the spotlight of fame and glory, hockey heroes can also be found in the unsung champions who toil tirelessly behind the scenes</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- percentage section -->
-        <section class=" lg:mb-20 flex items-center flex-col lg:flex-row lg:justify-around">
-            <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
-                <figure class="">
-                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title mb-3 text-xl font-semibold">Player Facility</h2>
-                  <p class="text-base font-normal">We provide world-class facilities for our players</p>
-                </div>
-            </div>
-
-            <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
-                <figure class="">
-                    <div class="radial-progress text-green-600" style="--value:95;" role="progressbar">95%</div>
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title mb-3 text-xl font-semibold">Experienced Coach</h2>
-                  <p class="text-base font-normal">We provide world-class facilities for our players</p>
-                </div>
-            </div>
-
-            <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
-                <figure class="">
-                    <div class="radial-progress text-orange-600" style="--value:90;" role="progressbar">90%</div>
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title mb-3 text-xl font-semibold">Senior Player</h2>
-                  <p class="text-base font-normal">We provide world-class facilities for our players</p>
-                </div>
-            </div>
-
-            <div class="mb-12 bg-base-100 flex flex-col items-center w-[340px]">
-                <figure class="">
-                    <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title mb-3 text-xl font-semibold">Training Ground</h2>
-                  <p class="text-base font-normal">We provide world-class facilities for our players</p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- program section -->
-        <section class="mb-16 lg:mb-28">
-          <div class="text-center flex flex-col items-center mb-6 lg:mb-12">
-            <h1 class="text-xl lg:text-4xl font-extrabold text-[#131318] my-3 lg:my-6">
-              Program Sections
-            </h1>
-            <div class="w-full lg:w-[607px]">
-              <p class="text-sm lg:text-base font-medium text-[rgba(19, 19, 24, 0.60)]">
-                Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game!
-              </p>
-            </div>
+      <!-- professional hockeys Club -->
+      <section>
+        <div class="flex flex-col items-center text-center p-9 mb-4 lg:mb-12">
+          <div class="text-4xl my-6 font-extrabold">
+            <h1>Professional Hockeys Club</h1>
           </div>
-
-          <!-- main part -->
-          <div class="gap-y-5 lg:mx-10 lg:grid lg:grid-cols-2 flex flex-col justify-end ">
-
-            <div class="w-[340px] h-[230px] lg:w-[573px] lg:h-[338px] bg-[url('Images/2.png')] rounded-2xl bg-cover px-5 lg:p-10">
-              <h1 class="text-white font-extrabold text-xl lg:text-3xl mb-4 mt-16">Junior Program</h1>
-              <div class="lg:w-[520px]">
-                <p class="text-white font-medium text-xs lg:text-base mb-4">Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game</p>
-              </div>
-            <div>
-              <button title="get ticket" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">Register Now!</button>
-            </div>
+          <div
+            class="w-full lg:w-[607px] text-[rgba(19, 19, 24, 0.60)] text-base font-medium"
+          >
+            <p>
+              Beyond the spotlight of fame and glory, hockey heroes can also be
+              found in the unsung champions who toil tirelessly behind the
+              scenes
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div class="w-[340px] h-[230px] lg:w-[573px] lg:h-[338px] bg-[url('Images/3.png')] rounded-2xl bg-cover px-5 lg:p-10">
-            <h1 class="text-white font-extrabold text-xl lg:text-3xl mb-4 mt-16">Teenager Program</h1>
-              <div class="lg:w-[520px]">
-                <p class="text-white font-medium text-xs lg:text-base mb-4">Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game</p>
-              </div>
-            <div>
-              <button title="get ticket" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">Register Now!</button>
+      <!-- percentage section -->
+      <section
+        class="lg:mb-12 flex items-center flex-col lg:flex-row lg:justify-around"
+      >
+        <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
+          <figure class="">
+            <div
+              class="radial-progress text-red-600"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 text-xl font-semibold">
+              Player Facility
+            </h2>
+            <p class="text-base font-normal">
+              We provide world-class facilities for our players
+            </p>
           </div>
         </div>
 
-        <div class="bg-cover w-full h-[230px] lg:h-[450px] flex flex-col justify-end col-span-2 bg-[url('Images/4.png')] rounded-2xl bg-no-repeat px-5 pb-5 lg:p-10">
-          <h1 class="text-white font-extrabold text-xl lg:text-3xl mb-4 mt-16">Professional Program</h1>
-              <div class="lg:w-[520px]">
-                <p class="text-white font-medium text-xs lg:text-base mb-4">Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game</p>
-              </div>
-            <div>
-              <button title="get ticket" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">Register Now!</button>
-        </div>
-      </div>
-          
+        <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
+          <figure class="">
+            <div
+              class="radial-progress text-green-600"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 text-xl font-semibold">
+              Experienced Coach
+            </h2>
+            <p class="text-base font-normal">
+              We provide world-class facilities for our players
+            </p>
           </div>
-        </section>
+        </div>
 
-        <!-- new product section -->
-        
+        <div class="mb-12 bg-base-100 flex flex-col items-center w-[350px]">
+          <figure class="">
+            <div
+              class="radial-progress text-orange-600"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 text-xl font-semibold">Senior Player</h2>
+            <p class="text-base font-normal">
+              We provide world-class facilities for our players
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-12 bg-base-100 flex flex-col items-center w-[340px]">
+          <figure class="">
+            <div
+              class="radial-progress text-blue-600"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 text-xl font-semibold">
+              Training Ground
+            </h2>
+            <p class="text-base font-normal">
+              We provide world-class facilities for our players
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- program section -->
+      <section class="lg:px-5">
+        <div class="text-center flex flex-col items-center mb-6 lg:mb-12">
+          <h1 class="text-xl lg:text-4xl font-extrabold text-[#131318] my-3 lg:my-6">
+            Program Sections
+          </h1>
+          <div class="w-full lg:w-[607px]">
+            <p class="text-sm lg:text-base font-medium text-[rgba(19, 19, 24, 0.60)]">
+              Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game!
+            </p>
+          </div>
+        </div>
+
+        <!-- main part -->
+        <div>
+          <!-- upper div -->
+          <div class="grid gap-3 lg:gap-6 lg:grid-cols-2">
+
+            <!-- left div -->
+            <div class="w-full gap-y-4 bg-[url('Images/2.png')] lg:p-6 p-4 pt-8 lg:pt-24 bg-cover rounded-2xl">
+              <div class="text-white gap-y-4 lg:px-4">
+                <h1 class="lg:text-3xl text-xl font-extrabold mb-2 lg:mb-4">Junior Program</h1>
+                <p class="lg:text-base text-xs font-medium mb-2 lg:mb-4">Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game!</p>
+              </div>
+
+              <div class="lg:px-4">
+                <button title="Register" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">
+                  Register Now!
+                </button>
+              </div>
+
+            </div>
+
+            <!-- right div -->
+            <div class="w-full gap-y-4 bg-[url('Images/3.png')] lg:p-6 p-4 pt-8 lg:pt-24 bg-cover rounded-2xl">
+              <div class="text-white gap-y-4 lg:px-4">
+                <h1 class="lg:text-3xl text-xl font-extrabold mb-2 lg:mb-4">Senior Program</h1>
+                <p class="lg:text-base text-xs font-medium mb-2 lg:mb-4">Explore our dynamic program section for insights, updates, and analysis on all things hockey. Stay ahead of the game!</p>
+              </div>
+
+              <div class="lg:px-4">
+                <button title="Register" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">
+                  Register Now!
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- lower div -->
+          <div class="mt-3 lg:mt-6">
+            <div class="lg:h-[420px] w-full gap-y-4 bg-[url('Images/4.png')] lg:p-6 p-4 pt-8 lg:pt-44 bg-cover rounded-2xl">
+              <div class="text-white lg:w-2/3 gap-y-4 lg:px-4">
+                <h1 class="lg:text-3xl text-xl font-extrabold mb-2 lg:mb-4">Professional Program</h1>
+                <p class="lg:text-base text-xs font-medium mb-2 lg:mb-4">Stay ahead of the competition with our cutting-edge technology solutions, including video analysis software, wearable and coaching apps designed to optimize player development and team performance.</p>
+              </div>
+
+              <div class="lg:px-4">
+                <button title="Register" class="btn btn-error rounded-sm lg:rounded-md bg-primary-color py-0 px-2 lg:px-6 lg:my-4 text-sm lg:text-xl text-white font-bold">
+                  Register Now!
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- new product section -->
+      
+
     </main>
-</body>
+  </body>
 </html>
